@@ -219,10 +219,118 @@ input[type=text], select, textarea {
 /* Media Queries */  /* @media screen max-widths: 980px, 768px and 640px */
 
 @media screen and (max-width: 980px) {
+  .white-box-on-pattern {
+    width:75%;
+    position: relative;
+    margin-left: 20px;
+  }
+  .myName {
+    margin-left: 10px;
+  }
+  .navLinks {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  .container-in-header {
+    max-width: 768px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    }
+
+  .white-box-on-pattern {
+    width: 95%;
+    position: relative;
+    margin-right: 20px;
+  }
+  .myName {
+    margin-left: 20px;
+  }
+  .navBar {
+    width: 680px;
+  }
+  .navLinks {
+    margin-right: 0px;
+  }
 }
 
-@media screen and (max-width: 640px) {}
+@media screen and (max-width: 640px) {
+
+/* Header and Navbar repositioned relative to each other*/
+header {
+  position: static;
+  display: block;
+  height: 120px
+  }
+  
+.container-in-header {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+  }
+
+.myName {
+  width: 100%;
+  display: block;
+  height: 50%;
+  margin: 0;
+  text-align: center;
+  }
+ 
+  .myName h1 {
+    font-size: 24px;
+    }
+
+.navBar {
+  display: block;
+  width: 100%;
+  }
+
+.navBar a {
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.navLinks {
+  display: block;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.white-box-on-pattern {
+  width: 90%;
+  position: relative;
+}
+#bio-image {
+  width:100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+.portfolio_images { 
+  height: 100%;
+  width: 100%;
+}
+
+.text-over-image {
+  position: absolute;
+  z-index: 999;
+  /* margin: 0 auto; */
+  left: 0;
+  right: 0;
+  top: 72%; /* Adjust this value to move the positioned div up and down */
+  left: 4%;
+  text-align: center;
+  width: 92%; /* Set the width of the positioned div */
+  }
+
+  h3 {
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    padding: 10px 0;
+   }
+
 }
